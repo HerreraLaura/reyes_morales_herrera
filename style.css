@@ -1,0 +1,506 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: rgb(15, 15, 14);
+    background-color: rgb(245, 231, 231);
+    opacity: 0.9;
+    text-align: center;
+    max-width:1250px;
+    margin: 0;
+	padding: 0;
+}
+.main-header { /*Cabecera fija de la parte superior*/
+    position: fixed;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color:darkturquoise;
+    width: 100%;
+    z-index: 100; /*Trae al frente el header*/ 
+    margin-top: 0; 
+    padding-top: 0%;
+}	    
+.logo-header{ /*parte izquierda del header donde se ubica el logo*/
+    float: left;
+    text-decoration: none;
+    margin-right: 20px;
+    height: 50px;
+    margin-top: 10px;
+} 
+.main-header img{ /* Foto ubicada en el header */
+    height: 50px;
+    width: 100px;
+    margin-left: 1cm;
+}
+nav {
+
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+		nav ul li {
+			display: inline-block; /*hace que se posicione la lista seguida de forma horizontal*/
+			line-height: 80px;
+            text-decoration: underline;
+            float: right;
+		}
+        nav ul li a {
+            display: block;
+            padding: 0 10px;
+            color: rgb(252, 244, 244);
+            font-size: 18px;
+        }   
+        
+            nav ul li a:hover {
+                color: white;
+            }
+.image-body{
+display: flex;
+}
+
+.image-body img { /*imagen que hay justo debajo del header */
+    object-fit: fill; /*ajusta el tamaño de la imagen al ancho y alto que especifiques*/
+    margin-top: 52px;
+    width: 2200px;
+    height: 365px; 
+    z-index: 1px;
+    
+}
+
+.image-body h2{ /* Texto que hay en la parte inferior de la imagen */
+    background-color:white;
+    color: aliceblue;
+    border: 5px solid darkturquoise;
+    padding-top: 140px;
+    padding-bottom: 110px;
+    margin-top: 45px;
+    color: darkturquoise;
+}
+
+.body-text a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: darkturquoise;
+    text-decoration: none;
+}
+
+.intro p{
+    margin: 1cm;
+    font-size: 18px;
+}
+
+.flex-container{ /*aquí haremos que las imagenes se posicionen una al lado de las otras y que cuando no quepan por ancho se situen justo debajo*/
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.flex-container img{
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    opacity: 0.9;
+}
+.flex-container p{ /*es el texto que se ubica en la parte inferior de cada imagen*/
+    text-align: center;
+    font-size:  15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.locations{
+    height: 500px;
+    position: static;
+    margin-left: 25px;
+    width: 1200px; 
+}
+.locations h2{
+    text-align: center;
+}
+
+.nowrap-container{ /*aquí creamos las columnas una al lado de las otras(flex) pero no hacemos que se situén debajo al reducir el tamaño de la pantalla(nowrap)si no que lo que hacemos es ajustar el texto al ancho*/
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.nowrap-container div{ 
+    margin: 40px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+a{ /* Es el titulo que hay en cada una de las boxes y que te redirige a la pestaña que hayas elegido */
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+#nuestra_historia{
+    background-color: darkturquoise;
+    border-right:20px;
+    width: 300px;
+    padding: 20px;
+    color: antiquewhite;
+}
+#el_pasado{
+    background-color: darkturquoise;
+    border:20px;
+    width: 300px;
+    padding: 20px;
+    color: antiquewhite;
+}
+#el_futuro{
+    background-color: darkturquoise;
+    border-left: 20px;
+    width: 300px;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.contact{
+    height: 200px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.contact img{ /*definir el tamaño de la foto de la web designer*/
+    width: 200px;
+    height: 300px;
+}
+
+.contact p{
+    text-align: center;
+    font-size:  15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.main-content h1{
+    margin: 0;
+	padding-top: 100px;
+}
+.main-content p{ /* Hace referencia a los parrafos ubicados en la pestaña de Nuestra_historia*/
+    font-size: 16px;
+    margin: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.main-content img{ /* Hace referencia a las imagenes ubicadas en la pestaña de Nuestra_historia*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+footer{ /*pie de página*/
+    text-align: left;
+    font-size: 13px;
+}
+
+/* CSS para el formulario*/
+form {
+    line-height: 27px;
+    margin-top: 35px;
+  }
+
+#top img { /* Older people img */
+    height: 40%;
+    width: 30%;
+    margin-top: 40px;
+}
+
+#story {
+    padding: 0 3%;
+    font-size: 18px;
+  }
+
+.word {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+#volver{ /* Botón para volver al formulario */
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#volver:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+
+input[type="submit"] { /* Botón para acceder a la historia de nuestro futuro */
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+input[type="submit"]:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+
+.nueve{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2009.jpg");
+}
+.diez{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2010.jpg");
+}
+
+.once{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2011.jpg"); 
+}
+
+.doce{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2012.jpg"); 
+}
+.trece{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2013.jpg"); 
+}
+.catorce{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2014.jpg"); 
+}
+.quince{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2015.jpg"); 
+}
+
+.dieciseis{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2016.jpg"); 
+}
+.diecisiete{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2017.jpg"); 
+}
+.dieciocho{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2018.jpg"); 
+}
+.diecinueve{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2019.jpg"); 
+}
+.veinte{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2020.jpg"); 
+}
+.dosuno{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2021.jpg"); 
+}
+.dosdos{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+    color: white;
+    background-image: url("index_2022.jpg"); 
+}
+.primerSlider{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background:rgb(252, 244, 244)
+}
+
+.primerSlider p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.container_slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+input[type="radio"] {
+    display: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /*Esto realiza el efecto de transicion en las fotos*/
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-5:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-6,
+#item-6:checked ~ .cards #selector-5{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-6:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-6{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5,
+#item-6:checked ~ .cards #selector-6  {
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
